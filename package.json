@@ -1,0 +1,29 @@
+{
+	"name": "PA Project",
+	"packageManager": "yarn@4.9.2",
+	"scripts": {
+		"cli": "ts-node ./cli/src/terminal.ts",
+		"web:dev": "vite --config ./web/vite.config.ts",
+		"web:build": "vite build --config ./web/vite.config.ts",
+		"web": "yarn web:build && vite preview --config ./web/vite.config.ts",
+		"test": "ts-node ./cli/src/test.ts",
+		"server": "uv run ./server/main.py"
+	},
+	"dependencies": {
+		"@pixiv/three-vrm": "^3.4.2",
+		"@pixiv/three-vrm-animation": "^3.4.2",
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0",
+		"react-three-fiber": "^6.0.13",
+		"socket.io-client": "^4.8.1",
+		"three": "^0.180.0"
+	},
+	"devDependencies": {
+		"@types/node": "^24.2.0",
+		"@types/three": "^0.180.0",
+		"@vitejs/plugin-react": "^5.0.1",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.9.2",
+		"vite": "npm:rolldown-vite@latest"
+	}
+}

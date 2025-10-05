@@ -1,0 +1,52 @@
+.devPanel {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	background: rgba(8, 47, 82, 0.3);
+	padding: 20px;
+	border-radius: 0.5rem;
+	backdrop-filter: blur(5px);
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	align-items: flex-start;
+	z-index: 10;
+}
+.fileInputContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+.fileInputContainer input[type="file"] {
+	display: none;
+}
+.fileInputContainer label {
+	cursor: pointer;
+	background-color: #4299e1;
+	color: white;
+	padding: 0.5rem 1rem;
+	border-radius: 0.25rem;
+	transition: background-color 0.2s;
+}
+.fileInputContainer label:hover {
+	background-color: #3182ce;
+}
+.fileInputContainer p {
+	font-size: 0.875rem;
+	color: #ccc;
+	margin: 0;
+}
+
+.resetCamera {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+.resetCamera p {
+	cursor: pointer;
+	background-color: #4299e1;
+	color: white;
+	padding: 0.5rem 1rem;
+	border-radius: 0.25rem;
+	transition: background-color 0.2s;
+}

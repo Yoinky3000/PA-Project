@@ -1,0 +1,12 @@
+body {
+	margin: 0;
+	overflow: hidden;
+	font-family: "Inter", sans-serif;
+	color: white;
+	background-color: #A0CEE8;
+}
+canvas {
+	display: block;
+	width: 100vw;
+	height: 100vh;
+}

@@ -1,0 +1,44 @@
+.uiPanel {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 500px;
+    height: 100vh;
+	background: rgba(8, 47, 82, 0.3);
+	padding: 0 20px;
+	z-index: 10;
+}
+
+.loadingCover {
+	position: absolute;
+	z-index: 5;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 1);
+	transition: opacity 1s;
+}
+
+.menuTitle {
+	width: 100%;
+	min-height: 70px;
+	align-items: center;
+	text-align: left;
+	padding: 10px 30px;
+	display: flex;
+}
+.menuTitle > h1 {
+	margin: 0;
+}
+
+.sBar {
+	width: 100%;
+	min-height: 1px;
+	background: linear-gradient(to right, #4facfe, #00f2fe);
+}
+
+.menuContent {
+	width: 100%;
+	height: calc(100vh - 91px);
+	align-content: center;
+	text-align: center;
+}

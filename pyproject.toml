@@ -1,0 +1,20 @@
+[project]
+name = "pa-project"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "autogen-agentchat>=0.7.4",
+    "autogen-ext[openai]>=0.7.4",
+    "fastapi>=0.116.1",
+    "faster-whisper>=1.2.0",
+    "fastmcp>=2.11.3",
+    "hypercorn>=0.17.3",
+    "keyboard>=0.13.5",
+    "openai[aiohttp]>=1.99.9",
+    "openpyxl>=3.1.5",
+    "python-socketio>=5.13.0",
+    "pytz>=2025.2",
+    "rich>=14.1.0",
+    "sounddevice>=0.5.2",
+    "whoosh>=2.7.4",
+]

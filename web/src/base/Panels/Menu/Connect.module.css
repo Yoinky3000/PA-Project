@@ -1,0 +1,73 @@
+.connectMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 70px);
+    padding: 20px;
+    color: #fff;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.connecting {
+    text-align: center;
+}
+
+.connecting p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.connectForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    padding: 10px;
+}
+
+.connectForm label {
+    text-align: left;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #aadfff;
+}
+
+.connectForm input {
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.connectForm input:focus {
+    border-color: #4facfe;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.connectButton {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.15s, opacity 0.15s;
+}
+
+.connectButton:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+.connectButton:active {
+    opacity: 1.0;
+    transform: scale(1);
+}

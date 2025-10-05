@@ -1,0 +1,115 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header {
+    flex: 0 0 auto;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.title {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.status {
+    color: #aaa;
+    font-style: italic;
+    padding: 15px;
+    text-align: center;
+}
+
+.profileList {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    list-style: none;
+    margin: 0;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 6px;
+}
+.profileList::-webkit-scrollbar {
+    width: 3px;
+}
+
+.profileList::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+}
+
+.profileList::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #4facfe, #00f2fe);
+    border-radius: 10px;
+}
+
+.profileItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: background 0.2s ease-in-out;
+}
+
+.profileItem:last-child {
+    margin-bottom: 0;
+}
+
+.profileItem:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.profileName {
+    color: #fff;
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+
+.selectButton {
+    padding: 6px 14px;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.selectButton.sbDisabled {
+    background: linear-gradient(to right, #999, #666);
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.selectButton:hover:not(.sbDisabled) {
+    opacity: 0.9;
+    transform: translateY(-2px) scale(1.05);
+}
+.dbContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.disconnectButton {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.15s, opacity 0.15s;
+}
