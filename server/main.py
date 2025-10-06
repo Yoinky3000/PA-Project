@@ -1,5 +1,3 @@
-
-from turtle import pd
 from typing import Optional
 from pydantic import BaseModel, ValidationError
 import yaml

@@ -87,7 +87,9 @@ async def genTTSAudio(inputText: str, inputLang: str, refPath: Path, refText: st
         }
 
         logger.info(f"Fetching GPT SoVITS ({tokenSize} tokens)...")
-        async with httpx.AsyncClient() as client:
+        timeout = httpx.Timeout(connect=10.0, read=120.0, write=30.0, pool=10.0)
+
+        async with httpx.AsyncClient(timeout=timeout) as client:
             resp = await client.post(BASE_URL, json=payload)
             if resp.status_code == 200:
                 return resp.content
@@ -95,7 +97,7 @@ async def genTTSAudio(inputText: str, inputLang: str, refPath: Path, refText: st
                 logger.error("Fetch failed: %s %s", resp.status_code, resp.text)
                 return None
     except Exception as e:
-        print(repr(e))
+        logger.error(repr(e))
         return None
 
 
